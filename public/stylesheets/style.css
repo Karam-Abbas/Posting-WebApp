@@ -14,13 +14,16 @@ body {
 }
 
 h3 {
-  padding: 30px 0px 0px 30px;
   color: white;
   font-size: 20px;
 }
 
 .main {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px;
 }
 
 .same {
@@ -38,7 +41,7 @@ h3 {
 }
 
 .btn {
-  background-color: rgb(0, 102, 185);
+  background-color: rgb(24, 71, 202);
   border-radius: 7px;
   padding: 5px 10px;
   border-style: none;
@@ -47,5 +50,37 @@ h3 {
 
 .btn:hover {
   cursor: pointer;
+  border: solid 1px white;
+}
+
+.navbar{
+  padding: 30px 30px 0px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-blue{
+  background-color: rgb(24, 71, 202);
+  border-radius: 7px;
+  padding: 5px 15px;
+  border-style: none;
+  color: white;
+  text-decoration: none;
+  border: solid 1px transparent;
+}
+
+.btn-yellow{
+  background-color: rgb(202, 190, 24);
+  border-radius: 7px;
+  padding: 5px 15px;
+  border-style: none;
+  color: white;
+  text-decoration: none;
+  border: solid 1px transparent;
+}
+
+.btn-blue:hover,.btn-yellow:hover {
   border: solid 1px white;
 }

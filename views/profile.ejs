@@ -8,12 +8,10 @@
   </head>
   <body>
     <div class="nav">
-        <div class="a"></div>
-       <a href="/logout" class="btn-red">Logout</a>
-    </div>
-    <div class="headline">
-        <img src="/images/uploads/<%= user.profilepic %>" alt="No image" class ="pic">
-    <h3><span class="text">Hi</span> , <%= user.name %> 👋</h3></div>
+        <a href="/logout" class="btn-red">Logout</a>
+        <a href="/posts" class="btn-blue">Feed</a>
+     </div>
+    <h3><span class="text">Hi</span> , <%= user.name %> 👋</h3>
     <h5>Create a new post </h5>
     <form action="/post" method="post">
         <textarea name="content" id="post" placeholder="What's on your mind...." rows=4 ></textarea><br>
@@ -25,6 +23,7 @@
         <div class="post">
             <div class="header">
                 <span class="username">@<%= user.username%></span>
+                <div class="time"><%= post.date.getDate()%>-<%= post.date.getMonth()%>-<%= post.date.getFullYear()%100 %> <span><%= post.date.getHours()%>:<%= post.date.getMinutes()%></span></div>
             </div>
             <div class="content">
                 <%= post.content%>

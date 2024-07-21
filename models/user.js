@@ -9,10 +9,6 @@ let userSchema = new mongoose.Schema({
   email: String,
   password: String,
   posts: [{ type: mongoose.Schema.Types.ObjectId, ref: "post" }],
-  profilepic : {
-    type:String,
-    default: "user-icon-placeholder.png"
-  }
 });
 
 module.exports = mongoose.model("user", userSchema);
