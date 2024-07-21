@@ -27,9 +27,10 @@
             <div class="content">
                 <%= post.content%>
             </div>
+            <div class="like"><%= post.likes.length%> Likes</div>
             <div class="actions">
-                <a class="like-button">Like</a>
-                <a class="edit-button">Edit</a>
+                <a href="/like/<%= post._id %>" class="like-button"><%= (post.likes.indexOf(post.user)===-1 ? "Like" : "Unlike")%></a>
+                <a href="/edit/<%= post._id %>" class="edit-button">Edit</a>
             </div>
         </div>
         <%})%>

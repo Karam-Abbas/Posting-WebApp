@@ -56,7 +56,16 @@ textarea:active {
   color: white;
 }
 
-.btn:hover {
+.btn-updt{
+  margin: 0px 0px 0px 30px;
+  background-color: rgb(185, 185, 0);
+  border-radius: 7px;
+  padding: 5px 15px;
+  border: solid 1px transparent;
+  color: rgb(0, 0, 0);
+}
+
+.btn:hover ,.btn-updt:hover{
   cursor: pointer;
   border: solid 1px white;
 }
@@ -100,7 +109,7 @@ textarea:active {
   border: 1px solid grey;
   border-radius: 8px;
   width: 21rem;
-  padding: 16px;
+  padding: 8px;
 }
 
 .header {
@@ -130,14 +139,25 @@ textarea:active {
 .like-button {
   color: #2189ff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .edit-button {
   color: #a5a5a5;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .like-button:hover,
 .edit-button:hover {
   color: #ffffff;
+  text-decoration: none;
+}
+
+
+.like
+{
+  padding-top: 8px;
+  color: #ffffff;
+  font-size: 12px;
 }
