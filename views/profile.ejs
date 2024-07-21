@@ -11,7 +11,9 @@
         <div class="a"></div>
        <a href="/logout" class="btn-red">Logout</a>
     </div>
-    <h3><span class="text">Hi</span> , <%= user.name %> 👋</h3>
+    <div class="headline">
+        <img src="/images/uploads/<%= user.profilepic %>" alt="No image" class ="pic">
+    <h3><span class="text">Hi</span> , <%= user.name %> 👋</h3></div>
     <h5>Create a new post </h5>
     <form action="/post" method="post">
         <textarea name="content" id="post" placeholder="What's on your mind...." rows=4 ></textarea><br>
